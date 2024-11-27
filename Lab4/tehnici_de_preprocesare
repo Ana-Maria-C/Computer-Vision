@@ -1,0 +1,23 @@
+Tehnicile de preprocesare pot imbunatati semnificativ calitatea analizei imaginii in diverse sarcini.
+
+1. Imbunatatirea imaginii (Sharpening):
+Imbunatateste detectia marginilor prin amplificarea componentelor de inalta frecventa (margini) din imagine.
+Este utila pentru a face caracteristicile mai clare si pentru a imbunatati recunoasterea obiectelor.
+
+2. Operatii Morfologice:
+Eroziunea poate fi utilizata pentru a elimina zgomotul mic sau pentru a micsora obiectele, facand caracteristicile mai clare.
+Dilatarea ajuta la umplerea micilor goluri din obiecte sau la extinderea acestora.
+Deschiderea (eroziune urmata de dilatare) elimina zgomotul mic din fundal.
+Inchiderea (dilatare urmata de eroziune) poate elimina mici goluri din interiorul obiectelor de prim-plan.
+Aceste operatii ajuta la pregatirea imaginii pentru o segmentare sau extragere a caracteristicilor mai buna.
+
+3. Praguri (Thresholding):
+Pragul simplu si pragul adaptiv ajuta la convertirea imaginii intr-un format binar, facilitand segmentarea obiectelor si
+separarea lor de fundal.
+Prin aplicarea acestor tehnici, poti face imaginea mai potrivita pentru sarcini precum detectarea obiectelor,
+segmentarea si recunoasterea, mai ales in cazurile in care imaginile sunt zgomotoase sau au contrast scazut.
+
+Concluzie:
+Tehnicile de preprocesare a imaginii, precum imbunatatirea imaginii, operatiile morfologice si pragurile, sunt esentiale
+pentru imbunatatirea calitatii imaginii pentru analize ulterioare. In functie de sarcina, aceste etape de preprocesare
+pot ajuta la eliminarea zgomotului, imbunatatirea caracteristicilor sau la separarea mai usoara a obiectelor de fundal.

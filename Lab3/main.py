@@ -4,9 +4,6 @@ import cv2
 import numpy as np
 import pandas as pd
 
-image_path = "images/1.jpg"
-image_read = cv2.imread(image_path)
-
 
 ##############################    Ex1     ################################
 
@@ -50,20 +47,27 @@ def skin_detection_ycbcr(img):
 
 
 def ex_1():
-    rgb_img = skin_detection_rgb(image_read)
-    cv2.imshow("Skin Detection RGB", rgb_img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    image_path = ["images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg"]
+    for img_path in image_path:
+        image_read = cv2.imread(img_path)
 
-    hsv_img = skin_detection_hsv(image_read)
-    cv2.imshow("Skin Detection HSV", hsv_img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+        rgb_img = skin_detection_rgb(image_read)
+        cv2.imshow("Skin Detection RGB", rgb_img)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
-    ycbcr = skin_detection_ycbcr(image_read)
-    cv2.imshow("Skin Detection YCbCr", ycbcr)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+        hsv_img = skin_detection_hsv(image_read)
+        cv2.imshow("Skin Detection HSV", hsv_img)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+
+        ycbcr = skin_detection_ycbcr(image_read)
+        cv2.imshow("Skin Detection YCbCr", ycbcr)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
 
 ######################################   EX2    ###################################################3
