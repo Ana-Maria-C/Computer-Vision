@@ -1,0 +1,26 @@
+"C:\Program Files\Python311\python.exe" C:\Users\Mihai\Desktop\Lab5\training_data_v2.py
+2024-12-08 20:30:46.158150: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-08 20:30:47.802888: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Setul de date a fost împărțit și copiat cu succes în directoarele train și test.
+Train Images Shape: (2144, 128, 128, 1)
+Train Masks Shape: (2144, 128, 128, 1)
+Test Images Shape: (920, 128, 128, 1)
+Test Masks Shape: (920, 128, 128, 1)
+C:\Users\Mihai\AppData\Roaming\Python\Python311\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2024-12-08 20:31:43.159172: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/5
+134/134 ━━━━━━━━━━━━━━━━━━━━ 101s 723ms/step - accuracy: 0.7896 - loss: 0.4073 - val_accuracy: 0.9823 - val_loss: 0.2005
+Epoch 2/5
+134/134 ━━━━━━━━━━━━━━━━━━━━ 88s 653ms/step - accuracy: 0.9827 - loss: 0.0582 - val_accuracy: 0.9823 - val_loss: 0.2930
+Epoch 3/5
+134/134 ━━━━━━━━━━━━━━━━━━━━ 87s 647ms/step - accuracy: 0.9841 - loss: 0.0478 - val_accuracy: 0.9823 - val_loss: 0.2073
+Epoch 4/5
+134/134 ━━━━━━━━━━━━━━━━━━━━ 89s 667ms/step - accuracy: 0.9851 - loss: 0.0440 - val_accuracy: 0.9824 - val_loss: 0.1438
+Epoch 5/5
+134/134 ━━━━━━━━━━━━━━━━━━━━ 88s 655ms/step - accuracy: 0.9853 - loss: 0.0420 - val_accuracy: 0.9827 - val_loss: 0.1254
+29/29 ━━━━━━━━━━━━━━━━━━━━ 6s 208ms/step
+Pixel Accuracy: 0.9827
+Mean Jaccard Index: 0.0264
+Mean Dice Coefficient: 0.0389
