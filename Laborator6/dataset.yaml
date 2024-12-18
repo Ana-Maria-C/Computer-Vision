@@ -1,0 +1,6 @@
+path: ./dataset_yolo
+train: ./datasets/train
+val: ./datasets/test
+names:
+  0: car
+  1: minivan

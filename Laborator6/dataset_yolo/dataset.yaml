@@ -1,0 +1,4 @@
+train: C:\Users\Ana-Maria\OneDrive\Desktop\Laborator6\dataset_yolo\train\images
+val: C:\Users\Ana-Maria\OneDrive\Desktop\Laborator6\dataset_yolo\test\images
+nc: 1
+names: ['car']
